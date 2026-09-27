@@ -1,7 +1,7 @@
 {
   "name": "Lithium",
   "description": "Bare HTTP/WebSocket proxy server with a static front-end host",
-  "repository": "https://github.com/nivalox/Lithium",
+  "repository": "https://github.com/Lithium-Foundry/Lithium/",
   "keywords": ["proxy", "node", "bare-server"],
   "env": {
     "PORT": {
