@@ -13,6 +13,6 @@
   "license": "AGPL-3.0",
   "author": "nivalos",
   "dependencies": {
-    "@nivalos/lithium.js": "latest"
+    "@nivalos/lithium.js": "^1.6.0"
   }
 }
