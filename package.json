@@ -1,6 +1,6 @@
 {
   "name": "lithium",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Web proxy front-end built on Lithium.js (Ultraviolet + Scramjet)",
   "type": "module",
   "main": "index.js",
@@ -13,6 +13,6 @@
   "license": "AGPL-3.0",
   "author": "nivalos",
   "dependencies": {
-    "lithium.js": "github:nivalox/Lithium.js"
+    "@nivalos/lithium.js": "latest"
   }
 }
