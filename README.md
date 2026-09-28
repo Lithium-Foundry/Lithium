@@ -42,7 +42,7 @@ Easily deploy your own instance of Lithium using one of the platforms below:
 ### Manual Setup
 ```bash
 # Clone the repository
-git clone https://github.com/nivalox/Lithium.git
+git clone https://github.com/Lithium-Foundry/Lithium.git
 cd Lithium
 
 # Install dependencies
