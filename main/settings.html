@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Lithium is a free web proxy that lets you browse sites that would otherwise be blocked.">
+  <meta name="keywords" content="proxy, unblocker, web proxy, Lithium">
+  <meta name="language" content="English">
+  <meta name="author" content="Lithium">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lithium">
+  <meta property="og:description" content="Lithium is a free web proxy that lets you browse sites that would otherwise be blocked.">
+  <meta property="og:image" content="favicon.ico">
+  <title>Lithium - Settings</title>
+  <script async src="https://arc.io/widget.min.js#r3Hj6Ygj"></script>
+  <script src="https://kit.fontawesome.com/983251336b.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/nav.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD0VC48YMW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RD0VC48YMW');
+  </script>
+</head>
+<body>
+  <script src="js/lithium-init.js" type="module"></script>
+  <navbar class="navbar">
+    <div class="title"><a href="main.html">
+      <img src="img/logo.png">&nbsp;Lithium
+    </a></div>
+    <div class="pages">
+      <ul>
+        <li><a href="https://discord.gg/hFZC5cgsmq" target="_blank" class="disc" id="pageHover"><i class="fa-brands fa-discord"></i>&nbsp;&nbsp;Join our Discord!</a></li>
+        <li><a href="gams/" id="pageHover"><span class="material-symbols-outlined">stadia_controller</span>&nbsp;Games</a></li>
+        <li><a href="#" id="pageHover"><span class="material-symbols-outlined">settings</span>&nbsp;Settings</a></li>
+        <!--<li><a href="/books.html" id="pageHover"><span class="material-symbols-outlined" style="margin-top:-4px;">star</span>&nbsp;Bookmarklets</a></li>-->
+        <div class="dropdown">
+          <li><a href="#" class="quick_links" id="pageHover"><span class="material-symbols-outlined">expand_more</span>Quick Links</a></li>
+          <div class="dropdown-links">
+            <a href="settings.html"><span class="material-symbols-outlined" style="font-size:14px;">add_circle</span>&nbsp;Add links in <span style="text-decoration: underline;">Settings</span></a>
+          </div>
+        </div>
+      </ul>
+      <span class="hamburger">
+        <span class="material-icons" id="menuBtn">menu</span>
+      </span>
+    </div>
+  </navbar>
+  <script src="js/ub/nav.js"></script>
+  
+  <div class="horizon-center">
+    <div id="mainContent">
+        <span class="title" style="color:rgb(65,95,105)">Settings</span><br>
+        <div class="settings">
+          <div class="setting">
+            <p id="name">Proxy Engine</p>
+            <p>Choose which proxy engine loads the sites you visit. Changing this reloads the page.</p>
+            <select id="proxy_select">
+              <option value="ultraviolet">Ultraviolet</option>
+              <option value="scramjet">Scramjet</option>
+            </select>
+            <p id="proxySaved">Saved! Reloading...</p>
+          </div>
+          <div class="setting">
+            <p id="name">Search Engine</p>
+            <p>Choose what's used to search when you type something that isn't a URL.</p>
+            <select id="engine_select"></select>
+            <p class="engineLinks"><span class="addEngine">Add Custom Engine</span>&nbsp;&nbsp;&nbsp;<span class="rmEngine">Remove Custom Engine</span></p>
+            <p id="engineSaved">Saved!</p>
+          </div>
+          <div class="setting">
+            <p id="name">Quick Links</p>
+            <p>Turn this on to add links that can be accessed quickly via "Quick Links" in the navbar.</p>
+            <p class="quickies" style="margin-top:60px;display:none;"><span id="detailBtn" class="add">Add Quick Links</span>&nbsp;&nbsp;&nbsp;<span id="detailBtn" class="rm">Remove Quick Links</span></p>
+            <input type="checkbox" id="quick_links" checked/><label for="quick_links"></label>
+            <p id="saved">Saved!</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  <script src="js/engines.js"></script>
+  <script src="js/settings.js"></script>
+</body>
+</html>
